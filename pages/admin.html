@@ -1,0 +1,57 @@
+<div class="container">
+
+<h2>Admin Panel</h2>
+
+<div class="card">
+
+<input
+type="text"
+placeholder="Company"
+ng-model="newJob.company" required>
+
+<input
+type="text"
+placeholder="Role"
+ng-model="newJob.role" required>
+
+<input
+type="text"
+placeholder="Package"
+ng-model="newJob.package" required>
+
+<button ng-click="addJob()">
+Add Job
+</button>
+
+</div>
+
+<table>
+
+<tr>
+
+<th>Company</th>
+<th>Role</th>
+<th>Package</th>
+<th>Action</th>
+
+</tr>
+
+<tr ng-repeat="job in jobs">
+
+<td>{{job.company}}</td>
+<td>{{job.role}}</td>
+<td>{{job.package}}</td>
+
+<td>
+
+<button ng-click="deleteJob($index)">
+Delete
+</button>
+
+</td>
+
+</tr>
+
+</table>
+
+</div>

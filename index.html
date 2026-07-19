@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="placementApp">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Placement Portal</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular-route.min.js"></script>
+
+    <script src="app.js"></script>
+    <script src="routes.js"></script>
+
+    <script src="controllers/loginController.js"></script>
+    <script src="controllers/dashboardController.js"></script>
+    <script src="controllers/jobsController.js"></script>
+    <script src="controllers/profileController.js"></script>
+    <script src="controllers/adminController.js"></script>
+    <script src="controllers/applicationsController.js"></script>
+</head>
+
+<body>
+
+<nav>
+
+    <h2>Placement Portal</h2>
+
+    <a href="#!/dashboard">Dashboard</a>
+    <a href="#!/jobs">Jobs</a>
+    <a href="#!/applications">Applications</a>
+    <a href="#!/profile">Profile</a>
+    <a href="#!/admin">Admin</a>
+
+</nav>
+
+<div ng-view></div>
+
+</body>
+</html>

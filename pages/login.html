@@ -1,0 +1,55 @@
+<div class="login-container">
+
+    <div class="left-panel">
+        <h1>Welcome Back!</h1>
+        <p>
+            Login to your account and explore placement opportunities,
+            internships and your application status.
+        </p>
+
+        <img src="logo.jpeg" class="illustration">
+
+        <div class="features">
+            <div>
+                <h3>💼 Find Jobs</h3>
+                <p>Discover top companies</p>
+            </div>
+
+            <div>
+                <h3>📝 Apply</h3>
+                <p>Easy application process</p>
+            </div>
+
+            <div>
+                <h3>📈 Track</h3>
+                <p>Application status</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="right-panel">
+
+        <div class="login-card">
+
+            <h2>Student Placement Portal</h2>
+            <p>Login to your account</p>
+
+            <input
+                type="text"
+                placeholder="Username"
+                ng-model="user.username">
+
+            <input
+                type="password"
+                placeholder="Password"
+                ng-model="user.password">
+
+            <button ng-click="login()">
+                Login →
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
